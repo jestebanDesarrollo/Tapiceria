@@ -1,3 +1,4 @@
+import Footer from "../helpers/Footer"
 import Header from "../helpers/Header"
 
 const Vehiculos = () => {
@@ -5,6 +6,9 @@ const Vehiculos = () => {
     <section className="vehiculos">
         <Header/>
         Vehiculos
+        <footer>
+          <Footer/>
+        </footer>
     </section>
   )
 }

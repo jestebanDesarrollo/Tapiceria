@@ -3,6 +3,7 @@ import { collection, addDoc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Header from "../helpers/Header";
+import Footer from "../helpers/Footer";
 
 export const CrearTrabajo = () => {
     
@@ -27,6 +28,9 @@ export const CrearTrabajo = () => {
                 <input className="crear-trabajo-input" onChange={(e) => setdescripcionTrabajo(e.target.value)} placeholder="Descripcion trabajo" type="text"  />
                 <button className="crear-trabajo-button" onClick={addTrabajos} type="button"> Crear Trabajo </button>
             </form>
+            <footer>
+                <Footer/>
+            </footer>
         </section>
     );
 }

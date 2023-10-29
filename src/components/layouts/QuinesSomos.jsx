@@ -1,3 +1,4 @@
+import Footer from "../helpers/Footer"
 import Header from "../helpers/Header"
 
 const QuinesSomos = () => {
@@ -5,6 +6,9 @@ const QuinesSomos = () => {
     <section className="quienesSomos">
         <Header/>
         Quienes Somos?
+        <footer>
+          <Footer/>
+        </footer>
     </section>
   )
 }

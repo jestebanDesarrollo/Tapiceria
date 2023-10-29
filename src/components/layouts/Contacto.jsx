@@ -1,6 +1,7 @@
 import { useState } from "react"
 import  emailjs  from "@emailjs/browser"
 import Header from "../helpers/Header"
+import Footer from "../helpers/Footer"
 
 const Contacto = () => {
   const [nombre,setNombre] = useState("")
@@ -61,7 +62,10 @@ const Contacto = () => {
             <img className='Contacto' src='/src/assets/img/Logo/CORIUM.png' />
             </div> 
           </div>    
-        </section>        
+        </section>
+        <footer>
+            <Footer/>
+          </footer>        
     </section>
   )
 }

@@ -3,6 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { dataBase } from "../config/tapiceroa-firebase";
 import Header from "../helpers/Header";
+import Footer from "../helpers/Footer";
 
 const EditarTrabajo = () => {
   const [nombreTrabajo, setnombreTrabajo] = useState("");
@@ -39,6 +40,9 @@ const EditarTrabajo = () => {
         <input value={descripcionTrabajo} onChange={(e) => setdescripcionTrabajo(e.target.value)} placeholder="Descripcion Trabajo" className="crear-trabajo-input" type="text"/>
         <button onClick={updateTrabajo}className="crear-trabajo-button"type="button">Agregar Cambios</button>
       </form>
+      <footer>
+        <Footer/>
+      </footer>
     </section>
   );
 };

@@ -3,6 +3,7 @@ import { dataBase } from "../config/tapiceroa-firebase"
 import { useEffect,useState } from "react"
 import { Link } from "react-router-dom"
 import Header from "../helpers/Header"
+import Footer from "../helpers/Footer"
 
 const Listadotrabajos = () => {
   const [trabajos,settrabajos] = useState([]);
@@ -43,6 +44,9 @@ const Listadotrabajos = () => {
             </div>
           ))}
         </section>
+        <footer>
+          <Footer/>
+        </footer>
       </section>
     );
 };
